@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Duck Crossing Game</title>
+</head>
+<body>
+    <div id="lobby">
+        <div class="lobby-content">
+            <h1>Mad duck</h1>
+            <h2>By: Aarin Mahala</h2>
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <p>Use arrow keys or on-screen buttons to move the duck</p>
+                <p>Avoid cars and trucks</p>
+                <p>You have 5 lives</p>
+                <p>Try to cross as many lanes as possible!</p>
+            </div>
+            <button id="start-game" aria-label="Start Game">Start Game</button>
+        </div>
+    </div>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+    <div class="game-stats">
+        <div id="counter" aria-label="Score">0</div>
+        <div id="lives" aria-label="Lives">❤️❤️❤️❤️❤️</div>
+    </div>
+    
+    <div id="controlls">
+        <div class="controls-grid">
+            <button id="forward" aria-label="Move Forward">
+                <svg width="30" height="30" viewBox="0 0 10 10" aria-hidden="true">
+                    <g transform="rotate(0, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                    </g>
+                </svg>
+            </button>
+            <button id="left" aria-label="Move Left">
+                <svg width="30" height="30" viewBox="0 0 10 10" aria-hidden="true">
+                    <g transform="rotate(-90, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                    </g>
+                </svg>
+            </button>
+            <button id="backward" aria-label="Move Backward">
+                <svg width="30" height="30" viewBox="0 0 10 10" aria-hidden="true">
+                    <g transform="rotate(180, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                    </g>
+                </svg>
+            </button>
+            <button id="right" aria-label="Move Right">
+                <svg width="30" height="30" viewBox="0 0 10 10" aria-hidden="true">
+                    <g transform="rotate(90, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="end">
+        <button id="retry" aria-label="Retry Game">Retry</button>
+    </div>
+</body>
+</html>
